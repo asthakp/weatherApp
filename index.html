@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="w-full bg-slate-100 h-[100vh] flex justify-center items-center">
+      <div>
+        <div
+          class="flex gap-2 w-[40vw] p-4 bg-gradient-to-r from-blue-300 to-fuchsia-500 rounded-xl border border-black m-auto mb-5"
+        >
+          <input
+            type="text"
+            id="location"
+            placeholder="Enter your location..."
+            class="h-8 w-[90%] pl-3"
+          />
+          <button
+            id="search"
+            class="w-8 h-8 flex justify-center items-center bg-slate-200"
+          >
+            <img
+              src="https://www.svgrepo.com/show/513607/search.svg"
+              class="w-5 h-5"
+            />
+          </button>
+        </div>
+
+        <div
+          id="result"
+          class="user-weather m-auto w-[40vw] bg-gradient-to-b from-blue-300 to-fuchsia-500 border border-black rounded-xl text-white pt-3 relative hidden"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
